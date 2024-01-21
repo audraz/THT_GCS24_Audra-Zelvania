@@ -1,0 +1,8 @@
+<div class="parent"> <!--Untuk membedakan antara parent component dan child component-->
+  <h1>To Do List!</h1> <!--Menampilkan judul/heading parent component-->
+  <ul>
+    <li *ngFor="let list of todolist">{{ list }}</li> <!--Untuk menampilkan isi array todolist-->
+  </ul>
+
+  <app-to-do [ToDoList]="todo" (newToDo)="addToDo($event)"></app-to-do> <!--Untuk memasuki to-do component / Mentransfer data dari parent ke child-->
+</div>

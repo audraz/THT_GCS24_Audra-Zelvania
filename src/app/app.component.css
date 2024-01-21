@@ -1,0 +1,9 @@
+.parent {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(5, 86, 227);
+}

@@ -1,0 +1,7 @@
+<div class="child"> <!--Untuk child component-->
+    <h3>Add your to do list!</h3> <!--Menampilkan judul/header untuk child component-->
+    <p>Priority: <strong>{{ ToDoList }}</strong></p>
+    <label for="todo-input">Add a to do list: </label> <!--Label untuk input to-do-list baru-->
+    <input type="text" id="todo-input" #newToDo> <!--Untuk input to-do-list baru-->
+    <button (click)="addNewToDo(newToDo.value)">Add</button> <!--Membuat tombol Add-->
+</div>
